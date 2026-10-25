@@ -1,0 +1,300 @@
+/* NOMBRE: ESTRELLA ITZEL TORRES GARIBAY */
+/* ELABORADO: 01 DE OCTUBRE DE 2026 */
+
+body {
+    /* Letra general */
+    font-family: "Raleway", sans-serif;
+    /* Tamaño de la letra */
+    font-size: 18px;
+    /* Color del texto */
+    color: #39323d;
+    /* Fondo lila muy claro */
+    background: #f5f1f8;
+    /* Ancho máximo */
+    max-width: 950px;
+    /* Centra la página */
+    margin: 0 auto;
+    /* Espacio alrededor */
+    padding: 20px;
+    /* Centra los textos */
+    text-align: center;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+    /* Letra diferente para el título */
+    font-family: "Yeseva One", serif;
+    /* Tamaño del título */
+    font-size: 3rem;
+    /* Color morado */
+    color: #5d4968;
+    /* Sombra lila */
+    text-shadow: 3px 3px 0 #ded0e8;
+    margin: 10px 0 25px;
+}
+
+
+/* SUBTÍTULO DEL FORMULARIO */
+
+h2 {
+    /* Letra para subtítulos */
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #695474;
+    margin: 10px 0 15px;
+}
+
+
+/* TÍTULOS DE URL, FORTALEZA Y MODELOS */
+
+h3 {
+    /* Letra diferente al contenido */
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #624b70;
+    margin: 0 0 8px;
+}
+
+
+/* TABLAS */
+
+table {
+    /* Ocupa todo el ancho */
+    width: 100%;
+    /* Une los bordes */
+    border-collapse: collapse;
+    /* Centra la tabla */
+    margin: 0 auto;
+}
+
+
+/* CELDAS */
+
+td {
+    /* Fondo lila pastel */
+    background: #eee4f4;
+    /* Borde lila */
+    border: 2px solid #bda3cc;
+    /* Espacio dentro de las celdas */
+    padding: 20px;
+    /* Centra el contenido */
+    text-align: center;
+    /* Tres columnas iguales */
+    width: 33%;
+    /* Letra del contenido */
+    font-family: "Raleway", sans-serif;
+    line-height: 1.6;
+}
+
+
+/* FILA DE LOS LOGOS */
+
+.tabla-ias tr:first-child td {
+    /* Fondo blanco */
+    background: #ffffff;
+}
+
+
+/* LOGOS */
+
+img {
+    width: 100%;
+    /* Tamaño máximo */
+    max-width: 180px;
+}
+
+
+/* ENLACES */
+
+a {
+    /* Letra de los enlaces */
+    font-family: "Josefin Sans", sans-serif;
+    /* Color morado */
+    color: #684c78;
+    /* Quita el subrayado */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+    /* ENLACES AL PASAR EL MOUSE */
+
+    a:hover {
+        color: #9270a5;
+    }
+
+
+/* ENLACE DE MÁS INFORMACIÓN */
+
+.mas-info {
+    margin-top: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.15rem;
+}
+
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    /* Fondo lila pastel */
+    background: #d8c2e5;
+    /* Color de las letras */
+    color: #493653;
+    /* Borde lila */
+    border: 2px solid #a989bc;
+    /* Espacio interior */
+    padding: 9px 22px;
+    /* Letra de los botones */
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    /* Quita el subrayado */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+    /* BOTÓN AL PASAR EL MOUSE */
+
+    .boton:hover {
+        /* Lila un poco más fuerte */
+        background: #bda3cc;
+        color: #ffffff;
+    }
+
+
+/* CAMBIO DE PÁGINA */
+
+
+/* El formulario empieza oculto */
+
+#formulario {
+    display: none;
+}
+
+
+    /* Muestra el formulario */
+
+    #formulario:target {
+        display: block;
+    }
+
+
+/* Oculta la página de las IA */
+
+body:has(#formulario:target) #inicio {
+    display: none;
+}
+
+
+/* TABLA DEL FORMULARIO */
+
+.tabla-form {
+    /* Hace el formulario más angosto */
+    width: 500px;
+    max-width: 100%;
+    /* Fondo lila */
+    background: #eee4f4;
+}
+
+
+    /* CELDAS DEL FORMULARIO */
+
+    .tabla-form td {
+        width: auto;
+        /* Quita el fondo de cada celda */
+        background: none;
+        /* Quita los bordes */
+        border: none;
+        padding: 10px;
+    }
+
+
+    /* TÍTULOS DEL FORMULARIO */
+
+    .tabla-form h3 {
+        margin: 0;
+    }
+
+
+    /* CUADROS PARA ESCRIBIR */
+
+    .tabla-form input,
+    .tabla-form textarea {
+        width: 100%;
+        padding: 7px;
+        /* Mantiene el tamaño correcto */
+        box-sizing: border-box;
+        /* Borde lila */
+        border: 2px solid #bda3cc;
+        /* Fondo lila casi blanco */
+        background: #fdfbfe;
+        /* Nueva letra para lo que escribe el usuario */
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        color: #39323d;
+    }
+
+        /* Adaptación del diseño para pantallas pequeñas */
+@media (max-width: 800px)
+{
+    /* Cambia el color de fondo de la página */
+    body {
+        background-color: #f7d1f8;
+    }
+
+      /* Modifica la apariencia del título principal */
+    h1 {
+        font-family: Helvetica, Geneva, Arial, sans-serif;
+        color: #c756d1;
+        font-size: 40px;
+        text-align: center;
+        background-color: #edc0f7;
+        padding: 20px;
+    }
+
+    /* Ajusta el tamaño y la distribución de la tabla */
+    .tabla-ias {
+        width: 95%;
+        margin: auto;
+        table-layout: fixed;
+        background-color: white;
+        border-collapse: collapse;
+    }
+
+    /* Da formato a las celdas de la tabla */
+    .tabla-ias td {
+        border: 1px solid #dddddd;
+        padding: 8px 4px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+     /* Ajusta el tamaño de los logotipos */
+    .tabla-ias img {
+        max-width: 65px;
+        height: auto;
+    }
+
+    /* Cambia el color y el tamaño de los subtítulos */
+    .tabla-ias h3 {
+        color: #d68ee7;
+        font-size: 14px;
+    }
+
+    /* Evita que los enlaces largos se salgan de las celdas */
+    .tabla-ias a {
+        overflow-wrap: anywhere;
+    }
+
+    /* Centra el texto del enlace de información */
+    .mas-info {
+        text-align: center;
+    }
+}
+

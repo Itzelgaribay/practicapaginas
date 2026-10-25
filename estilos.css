@@ -1,0 +1,299 @@
+/* Estilos generales de toda la página */
+body {
+    margin: 0; /* Elimina el margen exterior predeterminado del navegador */
+}
+
+/* Diseño de la tabla utilizada en el menú superior */
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+    height: 100px;
+    background-color: rgb(219, 188, 218);
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+a {
+    color: #000000;
+    font-size: 16px;
+}
+
+
+/* Diseño del portafolio */
+
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: #eeeeee;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.menu h3 {
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    color: #994dac;
+    text-decoration: none;
+    border-bottom: 1px solid #cccccc;
+}
+
+.menu a:hover {
+    background-color: #d5e4dc;
+}
+
+.visor {
+    flex: 1;
+    min-width: 0;
+    height: 100vh;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ===== ESTILOS GENERALES DE INICIO ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+.pagina-inicio {
+    font-family: Arial, sans-serif;
+    color: #514453;
+    background-color: #fcf9fd;
+    width: 100%;
+}
+
+/* ===== PRESENTACIÓN ===== */
+
+.presentacion {
+    min-height: 75vh;
+    padding: 50px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Texto de presentación */
+
+.texto-presentacion {
+    flex: 1;
+    max-width: 600px;
+}
+
+.etiqueta {
+    color: #93669c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.texto-presentacion h1 {
+    color: #583665;
+    font-size: 40px;
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+.texto-presentacion h1 span {
+    color: #a47bad;
+}
+
+.texto-presentacion h2 {
+    color: #7c6083;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.descripcion {
+    color: #625667;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 22px 0;
+}
+
+/* ===== BOTÓN ===== */
+
+.boton-presentacion {
+    display: inline-block;
+    background-color: #956ba0;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.boton-presentacion:hover {
+    background-color: #70477c;
+}
+
+/* ===== FOTOGRAFÍA ===== */
+
+.foto-presentacion {
+    flex: 0 1 320px;
+    text-align: center;
+}
+
+.foto-presentacion img {
+    width: 290px;
+    height: 340px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #ead9ed;
+  
+}
+
+
+
+/* ===== PIE DE PÁGINA ===== */
+
+.pie-pagina {
+    background-color: #dcbfdd;
+    color: #563663;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.pie-pagina p {
+    margin: 5px 0;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 850px) {
+    .presentacion {
+        padding: 40px 6%;
+        gap: 25px;
+    }
+
+    .texto-presentacion h1 {
+        font-size: 32px;
+    }
+
+    .foto-presentacion img {
+        width: 230px;
+        height: 280px;
+    }
+}
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 600px) {
+    .presentacion {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 35px 7%;
+        gap: 25px;
+    }
+
+    .texto-presentacion h1 {
+        font-size: 30px;
+    }
+
+    .texto-presentacion h2 {
+        font-size: 18px;
+    }
+
+    .descripcion {
+        font-size: 15px;
+    }
+
+    .foto-presentacion img {
+        width: 210px;
+        height: 250px;
+    }
+}
+
+
+
+/* Página Acerca de mí */
+
+.pagina-acerca {
+    margin: 0;
+    padding: 30px;
+    background-color: #faf7fc;
+    font-family: Arial, sans-serif;
+    color: #51465a;
+}
+
+
+/* Tarjeta blanca que contiene la presentación */
+.tarjeta-acerca {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #eadcf3;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #6e4a8015;
+}
+
+/* Texto pequeño: "CONÓCEME UN POCO MÁS" */
+.etiqueta {
+    color: #9873b0;
+    letter-spacing: 3px; /* Separa las letras entre sí */
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Título principal: "Itzel Garibay" */
+.tarjeta-acerca h1 {
+    text-align: center;
+    color: #8862a3;
+    font-size: 36px;
+}
+
+.tarjeta-acerca h3 {
+    text-align: center;
+    color: #a18aaf;
+    font-weight: normal; /* Evita que el texto aparezca en negrita */
+    font-size: 15px;
+}
+
+
+.tarjeta-acerca p {
+    line-height: 1.8;
+}
+
+.linea-lila {
+    width: 80px;
+    height: 3px;
+    margin: 25px auto;
+    background-color: #c5a4dc;
+    border-radius: 5px;
+}
+

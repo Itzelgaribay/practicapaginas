@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Adapta el ancho de la página al dispositivo donde se visualiza -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Establece el título que aparece en la pestaña del navegador -->
+    <title>Mi portafolio</title>
+    
+     <!-- Conecta el archivo CSS que define el diseño de la página -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+ <!-- Contiene todos los elementos visibles de la página -->
+<body>
+
+    <!-- Agrupa el menú de prácticas y el área de contenido -->
+    <div class="contenedor">
+
+        <!-- Crea el menú de navegación de las prácticas -->
+        <nav class="menu">
+
+            <!-- Muestra el título del menú -->
+            <h3>Prácticas</h3>
+
+            <a href="inicio.html" target="miFrame">Inicio</a>
+            <a href="practica1/index.html" target="miFrame">Práctica 1</a>
+            <a href="practica2/index.html" target="miFrame">Práctica 2</a>
+            <a href="practica3/index.html" target="miFrame">Práctica 3</a>
+            <a href="practica4/index.html" target="miFrame">Práctica 4</a>
+            <a href="practica5/index.html" target="miFrame">Práctica 5</a>
+            <a href="practica6/index.html" target="miFrame">Práctica 6</a>
+        </nav>
+
+
+        <!-- name: identifica el iframe para que los enlaces puedan cargar contenido dentro de él.
+             src: establece inicio.html como contenido inicial.
+             title: describe el contenido del iframe.
+             class: permite aplicar estilos desde estilos.css. -->
+        <iframe
+            name="miFrame"
+            src="inicio.html"
+            title="Contenido de las prácticas"
+            class="visor">
+        </iframe>
+
+    <!-- Cierra el contenedor del menú y el área de contenido -->
+    </div>
+</body>
+</html>
